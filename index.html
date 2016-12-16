@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    test | MyDCCU
+  </title>
+  <link rel="shortcut icon" href="/images/touch-icon.png" />
+  <link rel="apple-touch-icon-precomposed" href="/images/touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MyDCCU Web" />
+  <meta name="msapplication-TileImage" content="/images/windows-icon.png" />
+  <meta name="msapplication-TileColor" content="#fff" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/images/favicon.ico" />
+  <link rel="canonical" href="https://dev-dccu.cp-access.com/lending/testing-fico" />
+  <meta name="title" content="DuPont Community Credit Union" />
+  <meta name="description" content="DCCU is a community credit union serving the Central Shenandoah Valley of Virginia. Become a member today!" />
+  <meta name="no_search" content="true" />
+
+  <script type="text/javascript">
+    var MTIProjectId = '55664f01-4e6c-437e-9459-b5b6f7b84112';
+    (function() {
+      var mtiTracking = document.createElement('script');
+      mtiTracking.type = 'text/javascript';
+      mtiTracking.async = 'true';
+      mtiTracking.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//fast.fonts.net/t/trackingCode.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mtiTracking);
+    })();
+  </script>
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      custom: {
+        families: ['dccu']
+      }
+    });
+  </script>
+  <link href="/Content/styles.css" rel="stylesheet" />
+  <link href="/Content/grid.css" rel="stylesheet" />
+  <link href="/Content/dccu.css" rel="stylesheet" />
+  <link href="/Content/modal.css" rel="stylesheet" />
+
+
+  <!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="/content/ie8.css" />
+<![endif]-->
+
+</head>
+
+<body id="Body">
+  <div class="page">
+    <noindex>
+      <div id="wco-include-alert" style="display: none;">
+        no
+      </div>
+      <div class="alert" style="display:none;">
+        <div class="alert-wrap">
+          <div class="message">
+            <p>Due to inclement weather, DCCU will be closed, Saturday, January 23, 2016.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="header">
+        <div class="utility">
+          <div class="utility-wrap">
+            <ul>
+              <li><a href="/">Home <span class="icon dccu-lend"></span></a></li>
+              <li><a href="/rates/" id="rates">Rates <span class="icon dccu-rates"></span></a></li>
+              <li><a href="/about/careers">Careers <span class="icon dccu-careers"></span></a></li>
+              <li><a href="/events/">Events <span class="icon dccu-calendar"></span></a></li>
+              <li><a href="/learn/fraud-alerts">Fraud Alerts <span class="icon dccu-alert"></span></a></li>
+              <li><a href="/lending/apply-now">Apply Now <span class="icon dccu-pencil"></span></a></li>
+              <li><a href="/locations/">Locations <span class="icon dccu-map"></span></a></li>
+              <li><a href="/contact#Contact">Contact <span class="icon dccu-contact"></span></a></li>
+            </ul>
+            <form>
+              <input id="globalSearchInput" type="text" name="q" placeholder="Search MyDCCU..." />
+              <button id="globalSearchButton" class="icon dccu-search"></button>
+            </form>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="util-menus">
+          <div class="utilDD" id="ratesDD">
+            <div class="menu-section">
+              <h5>Rates for Fixed Rate Mortgages</h5>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>30 Yr</td>
+                    <td style="padding-left: 0.25em;">
+                      <span style="white-space:nowrap;">
+												<strong>4.281%</strong>
+												<sup>APR</sup>
+											</span>
+                    </td>
+                    <td style="padding-left: 0.25em;">
+                      <span style="white-space:nowrap;">
+												<strong>4.250%</strong>
+												<sup>Rate</sup>
+											</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>20 Yr</td>
+                    <td style="padding-left: 0.25em;">
+                      <span style="white-space:nowrap;">
+												<strong>4.168%</strong>
+												<sup>APR</sup>
+											</span>
+                    </td>
+                    <td style="padding-left: 0.25em;">
+                      <span style="white-space:nowrap;">
+												<strong>4.125%</strong>
+												<sup>Rate</sup>
+											</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>15 Yr</td>
+                    <td style="padding-left: 0.25em;">
+                      <span style="white-space:nowrap;">
+												<strong>3.554%</strong>
+												<sup>APR</sup>
+											</span>
+                    </td>
+                    <td style="padding-left: 0.25em;">
+                      <span style="white-space:nowrap;">
+												<strong>3.500%</strong>
+												<sup>Rate</sup>
+											</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="mute">
+                <a href="/rates/#mortgage">View all mortgage rates</a>
+              </p>
+						</div>
+            <div class="menu-section">
+              <h5>Credit Card Rates</h5>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>MasterCard Cash Back</td>
+                    <td style="padding-left: 0.25em;">
+                      <span style="white-space:nowrap;">
+												<strong>8.24%</strong>
+												<sup>Min APR</sup>
+											</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>MasterCard Rewards</td>
+                    <td style="padding-left: 0.25em;">
+                      <span style="white-space:nowrap;">
+												<strong>8.24%</strong>
+												<sup>Min APR</sup>
+											</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="mute">
+              </p>
+            </div>
+            <div class="menu-section">
+              <h5>New Auto Rates</h5>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>0 - 48 mos</td>
+                    <td style="padding-left: 0.25em;">
+                      <span style="white-space:nowrap;">
+												<strong>1.99%</strong>
+												<sup>Min APR</sup>
+											</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>49 - 60 mos</td>
+                    <td style="padding-left: 0.25em;">
+                      <span style="white-space:nowrap;">
+												<strong>2.19%</strong>
+												<sup>Min APR</sup>
+											</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>61 - 72 mos</td>
+                    <td style="padding-left: 0.25em;">
+                      <span style="white-space:nowrap;">
+												<strong>2.39%</strong>
+												<sup>Min APR</sup>
+											</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>73 - 84 mos</td>
+                    <td style="padding-left: 0.25em;">
+                      <span style="white-space:nowrap;">
+												<strong>2.79%</strong>
+												<sup>Min APR</sup>
+											</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="mute">
+                <a href="/rates/#auto">View all vehicle rates</a>
+              </p>
+            </div>
+            <div class="clear" style="text-align: center;">
+              <a href="/rates/" class="primary button">View All Rates</a>
+            </div>
+
+          </div>
+          <div class="utilDD" id="toolsDD">
+            <div class="menu-section">Section 1</div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="nav">
+          <div class="nav-wrap">
+            <div id="open-menu">
+              <div class="icon dccu-menu"></div>
+            </div>
+            <a href="/"><img src="/images/dccu-logo.png" class="dccu-logo" /></a>
+            <ul>
+              <li>
+                <a href="#" id="about">
+                  <div class="icon dccu-sun"></div>
+                  <span class="short">About</span>
+                  <span class="lead">We're Different</span>
+                  <span class="sub">Find out how</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" id="bank">
+                  <div class="icon dccu-bank"></div>
+                  <span class="short">Bank</span>
+                  <span class="lead">Banking</span>
+                  <span class="sub">Your money at work</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" id="lend">
+                  <div class="icon dccu-lend"></div>
+                  <span class="short">Lend</span>
+                  <span class="lead">Lending</span>
+                  <span class="sub">Mortgages & Loans</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" id="learn">
+                  <div class="icon dccu-learn"></div>
+                  <span class="short">Learn</span>
+                  <span class="lead">Learn & Grow</span>
+                  <span class="sub">Financial education</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" id="login">
+                  <div class="icon dccu-lock"></div>
+                  <span class="short">Sign In</span>
+                  <span class="lead">Sign In</span>
+                  <span class="sub">Online Banking</span>
+                </a>
+              </li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="nav-menus">
+          <div class="menuDD" id="aboutDD">
+            <div class="menu-section">
+              <h5>Who we are</h5>
+              <a href="/about/about-us" class="expand primary button">About Us</a>
+              <a href="/about/board-of-directors-photo-test" class="expand primary button">Board of Directors</a>
+              <a href="/presidents-desk/" class="expand primary button">President's Desk</a>
+            </div>
+            <div class="menu-section">
+              <h5>Become a Member</h5>
+              <a href="/about/become-a-member" class="expand primary button">Bank with Us</a>
+              <a href="/about/become-a-member#member-benefits" class="expand primary button">Member Benefits</a>
+              <a href="/about/member-stories" class="expand primary button">Member Stories</a>
+            </div>
+            <div class="menu-section">
+              <h5>Connect</h5>
+              <a href="/contact" class="expand primary button">Contact Us</a>
+              <a href="/feedback" class="expand primary button">Feedback</a>
+              <a href="/about/careers" class="expand primary button">Careers</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="menuDD" id="bankDD">
+            <div class="menu-section">
+              <h5>Personal Banking</h5>
+              <a href="/banking/checking" class="expand primary button">Checking</a>
+              <a href="/banking/savings" class="expand primary button">Savings</a>
+              <a href="/banking/visa-prepaid-cards" class="expand primary button">Visa Prepaid Cards</a>
+              <a href="/banking/mis" class="expand primary button">Investments</a>
+            </div>
+            <div class="menu-section">
+              <h5>Services</h5>
+              <a href="/banking/eservices" class="expand primary button">eServices</a>
+              <a href="/banking/mobile-banking" class="expand primary button">Mobile Banking</a>
+              <a href="/banking/atms" class="expand primary button">ATMs</a>
+              <a href="/banking/other-services" class="expand primary button">Other Services</a>
+            </div>
+            <div class="menu-section">
+              <h5>Business Banking</h5>
+              <a href="/banking/business" class="expand primary button">Business Services</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="menuDD" id="lendDD">
+            <div class="menu-section">
+              <h5>Lending</h5>
+              <a href="/dccumortgage" class="expand primary button">Mortgage</a>
+              <a href="/lending/heloc" class="expand primary button">Home Equity</a>
+              <a href="/lending/auto-loans" class="expand primary button">Auto Loans</a>
+            </div>
+            <div class="menu-section column-break">
+              <a href="/lending/credit-cards" class="expand primary button">Credit Cards</a>
+              <a href="/lending/fico" class="expand primary button">Credit Score</a>
+              <a href="/lending/personal-loans" class="expand primary button">Personal Loans</a>
+            </div>
+            <div class="menu-section column-break">
+              <a href="/lending/credit-union-property" class="expand primary button">Property for Sale</a>
+              <a href="/lending/student-loans" class="expand primary button">Student Loans</a>
+              <a href="/banking/business#business-loans" class="expand primary button">Business Loans</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="menuDD" id="learnDD">
+            <div class="menu-section">
+              <h5>Financial Education</h5>
+              <a href="/learn/free-classes" class="expand primary button">Free Classes</a>
+              <a href="/learn/youth-education" class="expand primary button">Youth Education</a>
+              <a href="/learn/scholarships" class="expand primary button">Scholarships</a>
+              <a href="/learn/fraud-prevention" class="expand primary button">Fraud Prevention</a>
+            </div>
+            <div class="menu-section">
+              <h5>Money Management</h5>
+              <a href="/learn/money-management-budgeting" class="expand primary button">Budgeting 101</a>
+              <a href="/learn/credit" class="expand primary button">Credit</a>
+              <a href="/learn/money-management-savings" class="expand primary button">Savings Types</a>
+              <a href="/learn/greenpath" class="expand primary button">Financial Tools</a>
+            </div>
+            <div class="menu-section">
+              <h5>Calculators</h5>
+              <a href="/mortgage/calculator" class="expand primary button">Mortgage</a>
+              <a href="/lending/auto-calculators" class="expand primary button">Auto </a>
+              <a href="/lending/credit-cards#credit-card-calculator" class="expand primary button">Credit Card</a>
+              <a href="/learn/savings-calculators" class="expand primary button">Savings</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="menuDD" id="loginDD">
+            <div class="menu-section">
+              <h5>Enter Your User Name</h5>
+              <form class="one-line" method="post" action="https://hb.mydccu.org/HomeBanking/login.aspx">
+                <input name="LoginName" type="text" class="login" autocomplete="off" placeholder="User Name" />
+                <input name="Submit" type="submit" value="Sign In" />
+              </form>
+              <a href="/banking/eservices#online" class="login-link-mobile">View Online Banking demo video</a>
+              <a href="https://hb.mydccu.org/HomeBanking/RegistrationDisclosure.aspx" target="_blank" class="login-link-mobile">New to Online Banking? Register here...</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </noindex>
+    <div class="container">
+
+      <div class="container-head">
+      </div>
+      <div class="breadcrumb">
+      </div>
+
+      <div class="content">
+        <div class="content-wrap">
+          <div class="row">
+            <h3>Choose the Card that's Right for You</h3>
+            <p>At DCCU, finding the credit card that's right for you is easy - both of our personal credit cards come with the same low rates, great benefits, and no application or annual fee. All you have to do is choose whether you want to earn cash back or rewards points on your purchases. It's that simple! Apply for a DCCU credit card today and start saving!</p>
+          </div>
+
+          <div class="row">
+            <div class="medium-7 medium-push-5 columns">
+              <div class="contact-form-wrap fico-calculator">
+
+                <span>Please Select Your Desired Card:</span>
+                <select id="cardType">
+									<option value="rewardscard">MasterCard Personal Credit Card</option>
+									<!--<option value="mastercard">Mastercard Cashback</option>-->
+									<option value="businesscard">MasterCard Business</option>
+								</select>
+                <span>Do you know your credit score?:</span>
+                <select id="knowScore">
+									<option value="yes">Yes</option>
+									<option value="no">No</option>
+								</select>
+                <div class="scoreQuiz">
+                  <iframe src="https://www.myfico.com/FICOCreditScoreEstimator/Estimator.aspx?inframe=true&amp;ads=none" height="400px" scrolling="yes"></iframe>
+                </div>
+                <span>Please Select Your Credit Score:</span>
+                <select id="creditScore">
+									<option value=""></option>
+									<option value="740">Excellent (740+)</option>
+									<option value="700">Good (700-739)</option>
+									<option value="660">Average (660-699)</option>
+									<option value="620">Below Average (620-659)</option>
+									<option value="570">Rebuilding (570-619)</option>
+								</select>
+                <div class="fico-calculator-aprs-row row">
+                  <div class="medium-6 columns">
+                    <h3>Your Approximate Credit Card Purchase APR:</h3>
+                    <span id="purchaseAprPerc"></span>
+                  </div>
+                  <div class="medium-6 columns">
+                    <h3>Your Approximate Credit Card Cash APR:</h3>
+                    <span id="cashAprPerc"></span>
+                  </div>
+                </div>
+                <div class="fico-calculator-congrats"></div>
+
+                <div class="fico-calculator-savings-slider row">
+                  <div class="medium-6 columns">
+                    <h3>That equates to a yearly savings of:</h3>
+                    <span id="fico-savings-amt"></span>
+                  </div>
+                  <div class="medium-6 columns">
+                    <h3>Based on an annual balance of:</h3>
+                    <span id="balanceSliderValue"></span>
+                    <input type="range" name="balanceSlider" id="balanceSlider" value="5000" min="0" step="100" max="10000" />
+                  </div>
+                </div>
+                <div class="fico-calculator-card-message"></div>
+                <div class="footnote">
+                  <p><i>*Please note, calculated rates within this feature are estimates only and are subject to change during application processing</i></p>
+                  <p><i>**All offers and terms of credit subject to an evaluation of individual creditworthiness</i></p>
+                  <p><i>***Industry average Purchase APR of 15.30% source: creditcards.com, published April 27, 2016</i></p>
+                </div>
+              </div>
+            </div>
+            <div class="medium-5 medium-pull-7 columns" style="padding: 2em 0.9375em 0;">
+              <div class="calculator-card-info-widget" data-card-type="rewardscard">
+                <div class="aside">
+                  <h5>Fixed Rate Placeholder</h5>
+                  <p><img alt="" src="/widgets/call-to-action-widgets/easset_upload_file494_5271_e.png" /></p>
+                  <div class="wco-include-link" style="display: none;">
+                  </div>
+                  <div class="wco-link cta-btn" style="display: none;">
+                  </div>
+                </div>
+              </div>
+              <div class="calculator-card-info-widget" data-card-type="businesscard">
+                <div class="aside">
+                  <h5>Open an Account</h5>
+                  <p><img src="/images/call-to-action-widgets/DCCU_OpenAnAccount_CTA.jpg" alt="" /></p>
+                  <div class="wco-include-link" style="display: none;">
+                    yes
+                  </div>
+                  <div class="wco-link cta-btn" style="display: none;">
+                    <p><a href="https://cs.loanspq.com/Consumer/Xpress/public/Disclosure.aspx">Click here</a> to open an account</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <noindex>
+      <div class="footer">
+        <div class="footer-wrap">
+          <div class="contact">
+            <span>Routing# 251483311</span>
+            <span>Local Calls: 540.946.3200</span>
+            <span>Out of Area Calls: 800.245.8085</span>
+            <span>140 Lucy Lane | P.O. Box 1365, Waynesboro, VA 22980</span>
+          </div>
+          <div class="links">
+            <div class="social">
+              <a href="https://www.facebook.com/mydccu" target="_blank" class="hasSpeedBump"><span class="icon dccu-facebook"></span></a>
+              <a href="http://www.linkedin.com/company/dupont-community-credit-union" target="_blank" class="hasSpeedBump"><span class="icon dccu-linkedin"></span></a>
+            </div>
+            <div class="gov">
+              <a href="http://www.hud.gov" target="_blank"><img src="/images/eho-logo.png" alt="Equal Housing Opportunity" /></a>
+              <a href="http://www.ncua.gov" target="_blank"><img src="/images/NCUA_Tag.jpg" alt="National Credit Union Administration" /></a>
+            </div>
+          </div>
+          <div class="meta">
+            <a href="/about/privacy-policy">Privacy Policy</a> | <a href="/learn/fraud-alerts">Fraud Alerts</a> | <a href="https://www.curewards.com/general_authenticate.asp" target="_blank" class="hasSpeedBump">CURewards</a>
+            <br /> &#169; 2015 DuPont Community Credit Union
+          </div>
+        </div>
+      </div>
+    </noindex>
+  </div>
+  <noindex>
+    <div id="speedBump" class="sbPopup mfp-hide" data-reveal>
+      <h3>External Link Notice...</h3>
+      <p>You are about to open a webpage that is not controlled or owned by DCCU. DCCU does not contribute to the content displayed on this website and does not represent you or the third party in transactions conducted via external links. Please be aware that information security and privacy policies may differ from those implemented by DCCU.</p>
+      <a href="#" id="sbLink" class="primary button" target="_blank">Accept</a>
+      <a href="#" id="sbClose">Cancel</a>
+    </div>
+  </noindex>
+  <script src="/Scripts/jquery-1.11.0.min.js"></script>
+  <script src="/Scripts/jquery.magnific-popup.min.js"></script>
+  <script src="/Scripts/jquery.scrollUp.js"></script>
+  <script src="/Scripts/handlebars.js"></script>
+  <script src="/Scripts/sugar.js"></script>
+  <script src="/Scripts/respond.min.js"></script>
+  <script src="/Scripts/waypoints.min.js"></script>
+  <script src="/Scripts/waypoints-sticky.min.js"></script>
+  <script src="/Scripts/jquery.tooltipster.min.js"></script>
+  <script src="/Scripts/jquery.fitvids.js"></script>
+  <script src="/Scripts/main.js"></script>
+  <script src="/Scripts/mydccu.js"></script>
+  <script src="/Scripts/mydccu-apr-calculator.js"></script>
+  <script src="/Scripts/mydccu-events.js"></script>
+  <script src="/Scripts/mydccu-fico-calcutor.js"></script>
+  <script src="/Scripts/mydccu-locations-map.js"></script>
+  <script src="/Scripts/mydccu-news.js"></script>
+  <script src="/Scripts/mydccu-search.js"></script>
+
+  <!--[if gt IE 8]><!-->
+  <script src="/scripts/main-nonie.js"></script>
+  <!--<![endif]-->
+  <script type="text/javascript">
+    (function($) {
+      $('#login').on('click', function() {
+        setTimeout(function() {
+          $('input[name="LoginName"]').focus();
+        }, 0);
+      });
+      $.scrollUp({
+        scrollText: '<div class="dccu-caret-up"></div>',
+        scrollTitle: 'Back to Top'
+      });
+      MyDCCU.Search.init({
+        url: '/search'
+      });
+    }(jQuery));
+  </script>
+
+
+
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-53082936-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+
+</html>
