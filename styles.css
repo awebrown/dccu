@@ -582,17 +582,24 @@ body#fsLocal { background: transparent; margin: 0.5em; }
 }
 .fico-calculator-congrats span {margin-bottom: .5em; }
 .fico-calculator-card-message span { margin-bottom: 1.5em; }
-.fico-calculator .footnote { margin-top: -.8em; margin-bottom: .5em; }
+.fico-calculator .footnote { /*margin-top: -.8em*/; margin-bottom: .5em; }
 .fico-calculator .footnote p { font-size: .875em }
 .calculator-card-info-widget:last-child { display: none; }
 .fico-calculator-aprs-row { display:none; border-top: 2px solid #dbe9e2; padding: 1em; margin: 0; }
 .fico-calculator-aprs-row h3 { font-size: 1.25em; border-bottom: none; margin-bottom: .25em; }
 .fico-calculator-aprs-row span { font-size: 3.5em; width: 100%; text-align: center; color: #2364b0; }
-.scoreQuiz { display:none;background: white;padding: 0;margin-bottom: 1em; }
+.scoreQuiz { display:none;background: white;padding: 0;margin-bottom: 1em;}
+.scoreQuiz iframe{padding: 0px 20px;}
 .fico-calculator-savings-slider { display:none; padding: 1em; margin-bottom: 1.25em !important; }
 .fico-calculator-savings-slider h3 { font-size: 1.25em; border-bottom: none; margin-bottom: .25em; }
 .fico-calculator-savings-slider span { font-size: 3.5em; width: 100%; text-align: center; color: #2364b0; }
 #balanceSliderValue { font-size: 2em; margin-bottom: .375em; }
+h3.calc-header { color: #0d6a3f; font-size: 1.2em; border: none; line-height: 1.7em; margin: 0; }
+div > label {	display: block; font-size: 14px; line-height: 1.5em; letter-spacing: -1px; }
+#cardType, #knowScore, #creditScore { text-align: center; }
+#creditScore { padding: 0; }
+.results { padding-top: 2em; }
+.your-info-header { margin-bottom: 5px; }
 /* ==========================================================================
    Animation
    ========================================================================== */

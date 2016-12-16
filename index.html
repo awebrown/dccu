@@ -1,11 +1,11 @@
 <!DOCTYPE html>
+
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -34,7 +34,7 @@
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mtiTracking);
     })();
   </script>
-  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
       custom: {
@@ -42,24 +42,21 @@
       }
     });
   </script>
-  <link href="/Content/styles.css" rel="stylesheet" />
-  <link href="/Content/grid.css" rel="stylesheet" />
-  <link href="/Content/dccu.css" rel="stylesheet" />
-  <link href="/Content/modal.css" rel="stylesheet" />
 
+  <link href="Content/styles.css" rel="stylesheet" />
+  <link href="Content/grid.css" rel="stylesheet" />
+  <link href="Content/dccu.css" rel="stylesheet" />
+  <link href="Content/modal.css" rel="stylesheet" />
 
   <!--[if lt IE 9]>
 <link rel="stylesheet" type="text/css" href="/content/ie8.css" />
 <![endif]-->
 
 </head>
-
 <body id="Body">
   <div class="page">
     <noindex>
-      <div id="wco-include-alert" style="display: none;">
-        no
-      </div>
+      <div id="wco-include-alert" style="display: none;">no</div>
       <div class="alert" style="display:none;">
         <div class="alert-wrap">
           <div class="message">
@@ -67,7 +64,6 @@
           </div>
         </div>
       </div>
-
       <div class="header">
         <div class="utility">
           <div class="utility-wrap">
@@ -113,13 +109,13 @@
                     <td>20 Yr</td>
                     <td style="padding-left: 0.25em;">
                       <span style="white-space:nowrap;">
-												<strong>4.168%</strong>
+												<strong>4.043%</strong>
 												<sup>APR</sup>
 											</span>
                     </td>
                     <td style="padding-left: 0.25em;">
                       <span style="white-space:nowrap;">
-												<strong>4.125%</strong>
+												<strong>4.000%</strong>
 												<sup>Rate</sup>
 											</span>
                     </td>
@@ -144,7 +140,7 @@
               <p class="mute">
                 <a href="/rates/#mortgage">View all mortgage rates</a>
               </p>
-						</div>
+            </div>
             <div class="menu-section">
               <h5>Credit Card Rates</h5>
               <table>
@@ -201,7 +197,7 @@
 												<strong>2.39%</strong>
 												<sup>Min APR</sup>
 											</span>
-                    </td>
+	                  </td>
                   </tr>
                   <tr>
                     <td>73 - 84 mos</td>
@@ -221,7 +217,6 @@
             <div class="clear" style="text-align: center;">
               <a href="/rates/" class="primary button">View All Rates</a>
             </div>
-
           </div>
           <div class="utilDD" id="toolsDD">
             <div class="menu-section">Section 1</div>
@@ -233,7 +228,7 @@
             <div id="open-menu">
               <div class="icon dccu-menu"></div>
             </div>
-            <a href="/"><img src="/images/dccu-logo.png" class="dccu-logo" /></a>
+            <a href="/"><img src="images/dccu-logo.png" class="dccu-logo" /></a>
             <ul>
               <li>
                 <a href="#" id="about">
@@ -381,46 +376,71 @@
       </div>
     </noindex>
     <div class="container">
-
-      <div class="container-head">
-      </div>
-      <div class="breadcrumb">
-      </div>
-
+      <div class="container-head"></div>
+      <div class="breadcrumb"></div>
       <div class="content">
         <div class="content-wrap">
           <div class="row">
             <h3>Choose the Card that's Right for You</h3>
             <p>At DCCU, finding the credit card that's right for you is easy - both of our personal credit cards come with the same low rates, great benefits, and no application or annual fee. All you have to do is choose whether you want to earn cash back or rewards points on your purchases. It's that simple! Apply for a DCCU credit card today and start saving!</p>
           </div>
-
+					<h5 class="your-info-header">Your information</h5>
+					<div class="row contact-form-wrap">
+						<div class="medium-3 medium-reset-order" id="cardType">
+							<h3 class="calc-header">Select card type</h3>
+							<div class="medium-reset-order  medium-6">
+								<label>Personal</label>
+								<input type="radio" name="cardType" value="rewardscard"/>
+							</div>
+							<div class="medium-6 medium-reset-order">
+								<label>Business</label>
+								<input type="radio" name="cardType" value="businesscard"/>
+							</div>
+						</div>
+						<div class="medium-4 medium-reset-order" id="knowScore">
+							<div>
+								<h3 class="calc-header">Do you know your credit score?</h3>
+								<div class="medium-6 medium-reset-order">
+									<label>Yes</label>
+									<input type="radio" name="knowScore" value="yes">
+								</div>
+								<div class="medium-6 medium-reset-order">
+									<label>No</label>
+									<input type="radio" name="knowScore" value="no">
+								</div>
+							</div>
+						</div>
+						<div class="medium-5 medium-reset-order" id="creditScore">
+							<h3 class="calc-header">Please select your credit score</h3>
+							<div class="medium-3 medium-reset-order">
+								<label>Rebuilding</label>
+								<input type="radio" name="creditScore" value="570" />
+							</div>
+							<div class="medium-3 medium-reset-order">
+								<label>Below Average</label>
+								<input type="radio" name="creditScore" value="620" />
+							</div>
+							<div class="medium-2 medium-reset-order">
+								<label>Average</label>
+								<input type="radio" name="creditScore" value="660" />
+							</div>
+							<div class="medium-2 medium-reset-order">
+								<label>Good</label>
+								<input type="radio" name="creditScore" value="700" />
+							</div>
+							<div class="medium-2 medium-reset-order">
+								<label>Excellent</label>
+								<input type="radio" name="creditScore" value="740" />
+							</div>
+						</div>
+					</div>
+					<div class="scoreQuiz">
+						<iframe src="https://www.myfico.com/FICOCreditScoreEstimator/Estimator.aspx?inframe=true&amp;ads=none" width="100%" height="500" frameborder="0" scrolling="yes"></iframe>
+					</div>
           <div class="row">
-            <div class="medium-7 medium-push-5 columns">
+            <div class="medium-7 medium-push-5 columns results" >
+							<h5>Your personalized results</h5>
               <div class="contact-form-wrap fico-calculator">
-
-                <span>Please Select Your Desired Card:</span>
-                <select id="cardType">
-									<option value="rewardscard">MasterCard Personal Credit Card</option>
-									<!--<option value="mastercard">Mastercard Cashback</option>-->
-									<option value="businesscard">MasterCard Business</option>
-								</select>
-                <span>Do you know your credit score?:</span>
-                <select id="knowScore">
-									<option value="yes">Yes</option>
-									<option value="no">No</option>
-								</select>
-                <div class="scoreQuiz">
-                  <iframe src="https://www.myfico.com/FICOCreditScoreEstimator/Estimator.aspx?inframe=true&amp;ads=none" height="400px" scrolling="yes"></iframe>
-                </div>
-                <span>Please Select Your Credit Score:</span>
-                <select id="creditScore">
-									<option value=""></option>
-									<option value="740">Excellent (740+)</option>
-									<option value="700">Good (700-739)</option>
-									<option value="660">Average (660-699)</option>
-									<option value="620">Below Average (620-659)</option>
-									<option value="570">Rebuilding (570-619)</option>
-								</select>
                 <div class="fico-calculator-aprs-row row">
                   <div class="medium-6 columns">
                     <h3>Your Approximate Credit Card Purchase APR:</h3>
@@ -432,7 +452,6 @@
                   </div>
                 </div>
                 <div class="fico-calculator-congrats"></div>
-
                 <div class="fico-calculator-savings-slider row">
                   <div class="medium-6 columns">
                     <h3>That equates to a yearly savings of:</h3>
@@ -456,7 +475,7 @@
               <div class="calculator-card-info-widget" data-card-type="rewardscard">
                 <div class="aside">
                   <h5>Fixed Rate Placeholder</h5>
-                  <p><img alt="" src="/widgets/call-to-action-widgets/easset_upload_file494_5271_e.png" /></p>
+                  <p><img alt="" src="images/call-to-action-widgets/easset_upload_file494_5271_e.png" /></p>
                   <div class="wco-include-link" style="display: none;">
                   </div>
                   <div class="wco-link cta-btn" style="display: none;">
@@ -466,7 +485,7 @@
               <div class="calculator-card-info-widget" data-card-type="businesscard">
                 <div class="aside">
                   <h5>Open an Account</h5>
-                  <p><img src="/images/call-to-action-widgets/DCCU_OpenAnAccount_CTA.jpg" alt="" /></p>
+                  <p><img src="images/call-to-action-widgets/DCCU_OpenAnAccount_CTA.jpg" alt="" /></p>
                   <div class="wco-include-link" style="display: none;">
                     yes
                   </div>
@@ -479,7 +498,6 @@
           </div>
         </div>
       </div>
-
     </div>
     <noindex>
       <div class="footer">
@@ -496,8 +514,8 @@
               <a href="http://www.linkedin.com/company/dupont-community-credit-union" target="_blank" class="hasSpeedBump"><span class="icon dccu-linkedin"></span></a>
             </div>
             <div class="gov">
-              <a href="http://www.hud.gov" target="_blank"><img src="/images/eho-logo.png" alt="Equal Housing Opportunity" /></a>
-              <a href="http://www.ncua.gov" target="_blank"><img src="/images/NCUA_Tag.jpg" alt="National Credit Union Administration" /></a>
+              <a href="http://www.hud.gov" target="_blank"><img src="images/eho-logo.png" alt="Equal Housing Opportunity" /></a>
+              <a href="http://www.ncua.gov" target="_blank"><img src="images/NCUA_Tag.jpg" alt="National Credit Union Administration" /></a>
             </div>
           </div>
           <div class="meta">
@@ -516,24 +534,24 @@
       <a href="#" id="sbClose">Cancel</a>
     </div>
   </noindex>
-  <script src="/Scripts/jquery-1.11.0.min.js"></script>
-  <script src="/Scripts/jquery.magnific-popup.min.js"></script>
-  <script src="/Scripts/jquery.scrollUp.js"></script>
-  <script src="/Scripts/handlebars.js"></script>
-  <script src="/Scripts/sugar.js"></script>
-  <script src="/Scripts/respond.min.js"></script>
-  <script src="/Scripts/waypoints.min.js"></script>
-  <script src="/Scripts/waypoints-sticky.min.js"></script>
-  <script src="/Scripts/jquery.tooltipster.min.js"></script>
-  <script src="/Scripts/jquery.fitvids.js"></script>
-  <script src="/Scripts/main.js"></script>
-  <script src="/Scripts/mydccu.js"></script>
-  <script src="/Scripts/mydccu-apr-calculator.js"></script>
-  <script src="/Scripts/mydccu-events.js"></script>
-  <script src="/Scripts/mydccu-fico-calcutor.js"></script>
-  <script src="/Scripts/mydccu-locations-map.js"></script>
-  <script src="/Scripts/mydccu-news.js"></script>
-  <script src="/Scripts/mydccu-search.js"></script>
+  <script src="Scripts/jquery-1.11.0.min.js"></script>
+  <script src="Scripts/jquery.magnific-popup.min.js"></script>
+  <script src="Scripts/jquery.scrollUp.js"></script>
+  <script src="Scripts/handlebars.js"></script>
+  <script src="Scripts/sugar.js"></script>
+  <script src="Scripts/respond.min.js"></script>
+  <script src="Scripts/waypoints.min.js"></script>
+  <script src="Scripts/waypoints-sticky.min.js"></script>
+  <script src="Scripts/jquery.tooltipster.min.js"></script>
+  <script src="Scripts/jquery.fitvids.js"></script>
+  <script src="Scripts/main.js"></script>
+  <script src="Scripts/mydccu.js"></script>
+  <script src="Scripts/mydccu-apr-calculator.js"></script>
+  <script src="Scripts/mydccu-events.js"></script>
+  <script src="Scripts/mydccu-fico-calcutor.js"></script>
+  <script src="Scripts/mydccu-locations-map.js"></script>
+  <script src="Scripts/mydccu-news.js"></script>
+  <script src="Scripts/mydccu-search.js"></script>
 
   <!--[if gt IE 8]><!-->
   <script src="/scripts/main-nonie.js"></script>
@@ -555,8 +573,6 @@
     }(jQuery));
   </script>
 
-
-
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -573,9 +589,5 @@
     ga('send', 'pageview');
   </script>
 
-
-
-
 </body>
-
 </html>

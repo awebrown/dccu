@@ -4,15 +4,16 @@ var apr740 = {visa: {purchase: '8.24', cash: '12.24'}, mc: {purchase: '8.90', ca
     apr620 = {visa: {purchase: '11.24', cash: '15.24'}, mc: {purchase: '11.90', cash: '15.90'}},
     apr570 = {visa: {purchase: '13.24', cash: '17.24'}, mc: {purchase: '13.90', cash: '17.90'}},
     aprLowCredit = {visa: {purchase: 'Please Contact Us', cash: ''}, mc: {purchase: 'Please Contact Us', cash: ''}},
-	industryAvg = 15.30;
+    industryAvg = 15.30;
 var $credit,
     $cardType,
     aprTier,
     purchaseApr,
     cashApr,
     aprDiff;
+
 $('#creditScore').change(function(event) {
-  if ($('#creditScore').val()) {
+  if ($('input[name=creditScore]:checked').val()) {
 		assignAprs();
 	} else {
 			$('.fico-calculator-aprs-row').hide();
@@ -21,21 +22,23 @@ $('#creditScore').change(function(event) {
 });
 $('#cardType').change(function(event){
     assignAprs();
-
-  $cardType = $('#cardType').val();
+  $cardType = $('input[name=cardType]:checked').val();
   $('.calculator-card-info-widget').hide();
   $('.calculator-card-info-widget[data-card-type=' + $cardType + ']').show();
 });
+
 $('#knowScore').change(function(event){
-	if ($('#knowScore').val() === "yes") {
+	if ($('input[name=knowScore]:checked').val() === 'yes') {
 		$('.scoreQuiz').hide()
 	}
-	else {
+	else if ($('input[name=knowScore]:checked').val() === 'no') {
 		$('.scoreQuiz').show()
 	}
 });
+
 $(document).ready(function () {
-	if ($('#creditScore').val()) {
+	if ($('input[name=creditScore]').val()) {
+    console.log($('input[name=creditScore]:checked').val())
 		assignAprs();
 	}
 });
@@ -50,9 +53,10 @@ $('#balanceSlider').on('input change', function(event){
 	assignSavings();
 });
 function assignAprs() {
-    $credit = $('#creditScore').val();
+  console.log($('input[name=creditScore]:checked').val());
+    $credit = $('input[name=creditScore]:checked').val();
     if ($credit > 100) {
-        $cardType = $('#cardType').val();
+        $cardType = $('input[name=cardType]:checked').val();
         if ($credit >= 740) {
             aprTier = apr740;
         } else if ($credit >= 700) {
@@ -70,6 +74,7 @@ function assignAprs() {
 
 		if ($credit >= 570) {
 			$cardType = assignCardType($cardType);
+      console.log($cardType);
 			purchaseApr = aprTier[$cardType].purchase;
 			cashApr = aprTier[$cardType].cash;
 			$('#purchaseAprPerc').text(purchaseApr + '%');
@@ -105,9 +110,9 @@ function assignAprs() {
     }
 }
 function assignCardType(cardType) {
-    if (cardType == 'rewardscard' || cardType == 'businesscard') {
+    if (cardType === 'rewardscard' || cardType === 'businesscard') {
         return 'visa';
-    } else if (cardType == 'mastercard') {
+    } else if (cardType === 'mastercard') {
         return 'mc';
     } else {
         return null;
